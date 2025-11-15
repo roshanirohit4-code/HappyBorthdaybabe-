@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Romantic Album</title>
+    <style>
+        /* Define a soft pink color palette and the overall style */
+        :root {
+            --pink-light: #FFB6C1; /* Very light pink for background */
+            --pink-medium: #da617d; /* Medium pink for accents */
+            --pink-dark: #e84a73; /* Darker pink for text and hearts */
+            --font-family: 'Georgia', serif;
+        }
+
+        body {
+            background-color: var(--pink-light);
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* --- Header Styling --- */
+        .album-header {
+            padding: 30px 0;
+        }
+
+        h1 {
+            color: var(--pink-dark);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--pink-medium);
+            font-size: 1.2em;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        /* --- Album Grid and Photo Card Styling --- */
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding-top: 20px;
+        }
+
+        .photo-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photo-card:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 4px solid var(--pink-medium);
+        }
+
+        .photo-caption {
+            color: #555;
+            font-style: italic;
+            margin-top: 10px;
+            padding: 0 5px;
+        }
+
+        /* --- Heart Decorative Element --- */
+        .heart-stamp {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: var(--pink-dark);
+            font-size: 2em;
+            transform: rotate(15deg);
+            opacity: 0.8;
+            pointer-events: none; /* Allows clicks to go through */
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .photo-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="album-header">
+        <h1> Our Love Story ❤🫂</h1>
+        <h2>Collection Of Our Most Cherished Moments Together</h2>
+    </header>
+
+    <div class="photo-grid">
+
+        <div class="photo-card">
+<img src="https://yt3.ggpht.com/7QE4BQw94UMkjoPYXT9Zl63g63QmQZGsxBARSxF26VL0d-mFLBll8oVuTAhHl9jV5rAuzcAOVIOWfQ=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> March 22nd</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/J8VhIN6LeZYDCj6paGh4SFz-Z3_mUF0wKd56CAMCDeO7JAQojv4fy4BnJuhtxITQLxAcxueyBuWTSA=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> April 26th</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/g6FzBRpa2UNjXAF72ISRubsIqctuSn0eaIaZ13uag_a4Dz9QOUJ3c2gOI_r5lE3TFBjUr6XFThWkyns=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> April 29th</p>
+        </div>
+
+        <div class="photo-card">
+<img src="https://yt3.ggpht.com/m2sfYlMmXyzw21iuNX_y2QXcC1zSAL_X-cziWJbF3vv83ZdFIO73cuOmphzLqxRIaiYHH3BQ9B3R=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> May 2nd</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/xqoi2a_llnbgVZvo7Sp1x09wueUAz0ykJN0qSdS4MGy_fUcAMyqEOgxXBexGnCq-zhKPWfgt_hMsvQM=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> May 5th</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/1hmU_-86xgM2DmSfnohSMUWY6nKDfanqYsaM-TdOAEU5WOBcbt_oaZZKhyxoq1Y0T54zB79ypZKpeQ=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> May 9th</p>
+        </div>
+
+
+        <div class="photo-card">
+<img src="https://yt3.ggpht.com/79PGJdF6KD0IDJKhKxHILgzpg4FkuoSvCaBaBcKbyQjcTIx2c9vspM9OlUP2T5iaeJDcXuzui877XeY=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> May 15th</p>
+        </div>
+
+        
+        <div class="photo-card">
+<img src="https://yt3.ggpht.com/ZyiO_byFR2HVXCf_O1-DvyOrOc8nyqfV_2tQLsuLjI22L20AciVoyOOmciwNtfJKKQcmXJiry4nYgA=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> May 16th</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/761ZWzXh4fv4Y45Qm6muYKz8u4AYjyv-iU2TZaOAG4-ZAV9BA6rw6JeCyT8CGMC3x4T1eCQJjkod1WI=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> May 17th</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/lE0XaMk-yKULOOPR7J-C0l2S1kFBS0Rmixc3FgEBL-A049461yaVkKvJslDLnoy4_3KVZIp3Fq7Gkw=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> May 22nd</p>
+        </div>
+
+        <div class="photo-card">
+<img src="https://yt3.ggpht.com/YupcE-ynRrgOewR5Hr_i9IOeR_UWQ5S0omP84KqT0UHNmzXKueAa2lCQwkAe-npPe6xcTDfkMg6Ykw=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> May 23rd</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/r08KB2HIa6YhJ578WQH-vkbdLwDmf0xNJMZAPTV_wACo4wovIw0D7o_bu5BVu2WB7-KrPR6reiw3Tg=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> May 23rd</p>
+        </div>
+
+        <div class="photo-card">
+<img src="https://yt3.ggpht.com/ETzgrMrThSFlEt6h1l_8qKtCzt5gana2lIlBn-I8VqG-90HsWZ5drxUhBAS4sukMEV1_Rk6UfD71FA=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">May 27th</p>
+        </div>
+
+        <div class="photo-card">
+<img src="https://yt3.ggpht.com/X21zbrLnWyiQ_6UCY1OsxxOIc_VGCtWSctSRssx9ZkzIdzoijpiyyv6y-2ThImyJAS4u1xYqzlAa-g=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">May 30th</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/yRYHbzyZ3hjkTpZcTQkiMzgYeoauGfAUkTIF6FZs868gjobl8aC94BAEY6K6vpSvv9vg_-U_oMJJ=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">June 3rd</p>
+        </div>
+
+                        <div class="photo-card">
+<img src="https://yt3.ggpht.com/y_BQ_hnwVdM1YXPKk3Kd6Z-wZkSwpDmrBhXYjr1_cxpsLG4stiM7Uy-kNH_v1rLY00GzewAzFH1IGik=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">June 12th</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/GnXt8d-thbIor4q0Wg1GBPoqZ4ZXWs-L7dr5NyTxHYdCdmfcE-9_abncrWCAIGcfIAnTKpw9kECX=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">June 21st</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/qC_iqRzCQtAjgA9lPmjGkYm8v4YIw2DQjb1UEmO9cj9NmCKhReajl4B7mZxT8VIznr6JHfQfEVrseXo=s1600-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">July 5th</p>
+        </div>
+
+                        <div class="photo-card">
+<img src="https://yt3.ggpht.com/qp-ahNu1SDoeS1tE2doEu0PrWc7jqrB2HlizxjwIGI1zBAT6-zdkvEJDb1Frm4yE8CZerFFOnJfV=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">July 9th</p>
+        </div>
+
+        <div class="photo-card">
+<img src="https://yt3.ggpht.com/cByHAtBwa6xILADYdu0QEVxJSFL4NAYxEkuZLAQHT-N55jSgnxXZr0orH5fRbU61y5sKwqinRv1TQA=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">July 14th</p>
+        </div>
+
+                    <div class="photo-card">
+<img src="https://yt3.ggpht.com/11vv40-2Vj7QJicKoH-6EazV0MZa65Tknsqo7sAtaEETs7UwPZwa3kFo5NQSBDLEaC1XRZNTGjDAo5g=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">July 19th</p>
+        </div>
+
+                            <div class="photo-card">
+<img src="https://yt3.ggpht.com/MBhSTRE9fLUuTcFU3doq7qWgyA9LnKvuiaR8j9DaNXAV7riT_xaYEpwatTfd9RJtxUosQal-CYJ13w=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">July 25th</p>
+        </div>
+
+                                    <div class="photo-card">
+<img src="https://yt3.ggpht.com/uIkliAto7tS_uxftsHy7Al1TYuPlZ1pUzEn1s-z74MSkw8fgW7bcGMy_MMq-hZuELOcV_5JtqUVtDw=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">July 28th</p>
+        </div>
+
+                <div class="photo-card">
+<img src="https://yt3.ggpht.com/0ALHgqTx5eVbB4bmWQ06sGNM29zWcuPf8wC9M5I0udRozCbSgjJjcN8ZRyy2ejcXNKrLoMZSpqF7yDo=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">August 14th</p>
+        </div>
+
+                        <div class="photo-card">
+<img src="https://yt3.ggpht.com/u4GLA8Jk5DtEA3kq8neUazadtX-9531jtseUPPr8e4qtPMi6DTjMQ646fBSAZY0PKkvVZRk8htXQqQ=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">August 22nd</p>
+        </div>
+
+                        <div class="photo-card">
+<img src="https://yt3.ggpht.com/T4XiqoD2DDOfS-PIas97-rmtQ0nWvc6RmWLWrEdsDSqj0frgCj7X_OoNl7CXXoXG9fuDErLWdyfjgfU=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">September 3rd</p>
+        </div>
+
+                                <div class="photo-card">
+<img src="https://yt3.ggpht.com/EVpfpkV8JeFv8cjyUbq2qX58xa_fI3EcT47mkHEfDLOF5QJzDKRRMMC9flAQCmOpfi_9mbWgdH1GYw=s1151-c-fcrop64=1,38100000c7efffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">September 5th</p>
+        </div>        
+
+                                <div class="photo-card">
+            <img src="https://yt3.ggpht.com/aEx3jJqUV66uvH3IYlXxoUEu3-vpPn8iimLm-2XB635Y6H6iTgImmxd0zdATKM43Q8NCrPcBhCRMKA=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">September 20th</p>
+        </div>        
+
+                                <div class="photo-card">
+            <img src="https://yt3.ggpht.com/u3hNJnefuX6fvv8VC3p_hbm_Y-7tu2ytRL5eEuREvOUS6QECt7PvuVYdcVoFl8gL0bGLu_dD7UTbxiI=s1079-c-fcrop64=1,38110000c7eeffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">October 3rd</p>
+        </div>        
+
+                                    <div class="photo-card">
+            <img src="https://yt3.ggpht.com/VPz7ctoZOjsWCdXyDqOeJTuuuuZKzIvjhDYumRaOVuzVhYu7aLtf6unlcHU92cMOrG9mK1Y2ndpIhWk=s1600-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">October 6th</p>
+        </div>        
+        
+                                    <div class="photo-card">
+            <img src="https://yt3.ggpht.com/EJdYxe_tAxJ7fLt182bUa3xKvvJwOFbjIwNDKdQjuKX1UrRnfxsV6y6pMqPAoaT1-X8YLePTAe3maA=s1440-c-fcrop64=1,38000000c7ffffff-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption">November 6th</p>
+        </div>      
+
+        <div class="photo-card">
+<img src="https://yt3.ggpht.com/tYbV16rxSlnvcnBpncK4n_z3ZKoFYeYaY5B08qytFEy1ktbR9XIxrtRZMqEtji5_OL9wwtmp3nKi=s1600-rw-nd-v1" >
+            <div class="heart-stamp">❤</div>
+            <p class="photo-caption"> November 12th</p>
+        </div>
+
+        </div>
+
+</body>
+</html>
